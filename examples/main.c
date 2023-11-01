@@ -28,5 +28,5 @@ int main(void)
 
 size_t randomPick(size_t count)
 {
-    return (rand() * 1.0 / RAND_MAX) * count;
+    return (size_t)((rand() * 1.0 / RAND_MAX) * count);
 }
